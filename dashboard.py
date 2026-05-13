@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 from datetime import datetime
@@ -7,6 +8,7 @@ st.set_page_config(page_title="Emanuel Sankofa Dashboard", layout="wide")
 st.title("📚 Emanuel Sankofa")
 st.caption("William Emanuel Boatwright — Literary Assistant Dashboard")
 
+# Check for data files
 csv_path = "submissions_practice.csv"
 if not os.path.exists(csv_path):
     csv_path = "sample.csv"
@@ -38,4 +40,3 @@ else:
 
 st.markdown("---")
 st.caption(f"Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-requirements.txt
